@@ -35,5 +35,8 @@ jobs:
           allowUpdates: true
           replacesArtifacts: true
           tag: "repo"
-          artifacts: "repo/*.zst"
+          artifacts: |
+            "repo/*.zst"
+            "repo/wine-tkg.*"
+          
           token: ${{ secrets.PAT }}
